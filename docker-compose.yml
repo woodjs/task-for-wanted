@@ -1,0 +1,11 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo
+    ports:
+      - 27017:27017
+    command: [--replSet, rs0]
+    volumes:
+      - ./mongo-data:/data/db
