@@ -25,3 +25,14 @@
 	}
 ]
 ```
+
+
+### 2. `POST /messages`
+
+**body**
+
+```json
+{
+   text: 'Hello!'
+}
+```
